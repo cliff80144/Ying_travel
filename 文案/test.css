@@ -1,0 +1,17 @@
+h1 {color: #000;}
+h3 {color:rgb(184, 55, 55);}
+
+
+
+  
+
+
+/*類別，需手動套用*/
+.text-yellow {color:yellow;}   
+
+/*ID，先HTML用命名，CSS當作選取器來選，少用---- for ex p*/
+#good-text {color:yellowgreen;}
+
+
+/*複合，多層式標籤*/
+body p {color: mediumspringgreen;}

@@ -1,0 +1,92 @@
+/* 1.網路字體google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+/* 可以自行排序所需使用的字體 */
+body {
+    font-family: '微軟正黑體', 'Noto Sans TC', 'sans-serif';
+}
+
+
+
+
+/* 輪播圖 */
+
+/* 解決首頁左圖右文的垂直對齊問題 */
+.text-block-verticle-align {
+    margin-top: 0rem;
+}
+
+/* 解決首頁左圖右文的標題字級過大問題 */
+.text-h2-font-size {
+    font-size:  2rem;
+}
+
+
+/* 輪播圖開始 */
+
+/* 請注意一下自己標點符號的大小寫，請都使用英文的標點符號，如若使用中文的標點符號go live將會沒反應 */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    width: 5%;
+    height:10% ;
+    opacity:0.4 ;
+    background:#5F8FFF;
+}
+
+.carousel-control-prev{
+    padding-left: 20px;
+}
+.carousel-control-next {
+    padding-right: 20px;
+}
+
+/* 改變超連結的狀態，所以才有冒號  ， 這個是狀態 ，不用用class命名，原本就存在的 */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #fff; 
+    text-decoration:none; 
+    outline: 0; 
+    opacity:0.8 ;
+}
+
+.carousel-indicators li{
+    position: relative;
+    -webkit-box-flex:0 ;
+    width: 50px;
+    height:20px ;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgba(95,143,255,0.7);
+}
+
+/* class=active 這個是類別 所以才用.active */
+.carousel-indicators .active {
+    background-color: #5F8FFF;
+}
+/* 輪播圖-結束 */
+
+
+/* .col-lg-6{ */
+    /* margin-bottom: 10pt; */
+/* } */
+
+/* 測試GoogleIcons 的樣式 與外觀 */
+.icon-red { color: red;}
+.icon-blue{ color: blue;}
+
+
+/* 修改safe清單icon的外觀 */
+.icon-safe {
+    color: blue;
+    font-size: 24px; /*需配清單文字大小*/
+    vertical-align:text-bottom;  /*icon與第一個字文字對齊*/
+}
+/* 拿掉safe.html預設的清單圖示 */
+.icon-list-none {
+    list-style-type: none; /*隱藏圖示*/
+}
+
+/* 更改hotel裡面的row(欄列中的邊框) */
+.card-no-border{
+    border: none;
+}
